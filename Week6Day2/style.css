@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(190, 189, 189);
+}
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 0px;
+    margin: 0 auto;
+    width: 35%;
+    height: 75vh;
+  }
+  
+  .grid-box {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(37, 37, 37);
+  }
+  
+  .grid-box.active {
+    background-color: #888889;
+  }
+  
