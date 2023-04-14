@@ -1,0 +1,121 @@
+@font-face{
+  font-family: "Roboto";
+  src: url('Fonts/Roboto-Regular.ttf') format('truetype');
+}
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+  background-color: rgb(187, 184, 184);
+}
+
+.post-container {
+  position: sticky;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 1px 20px;
+  border: white;
+}
+
+.comment-form {
+  position:fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 10px 10px 10px 10px;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.comment-form form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.comment-form form input[type="text"]{
+  width: 125px;
+  margin-right: 10px;
+}
+.comment-form form textarea {
+  flex-grow: 1;
+  height: 17px;
+  margin-right: 10px;
+  display: inline-block;
+}
+.comment-form form input::placeholder,
+.comment-form form textarea::placeholder {
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: light;
+  color: #7e7d7d;
+}
+.comment-form button{
+  background-color: white;
+  border: none;
+  color: rgb(149, 195, 240);
+}
+
+.comment-form button:hover {
+  background-color: #90a1b3;
+}
+.comments-container{
+  margin-top: 25px;
+}
+.comment{
+  display: flex;
+  border: solid;
+  border-color: rgb(187, 184, 184);
+  margin-top: 10px;
+  padding-top: 10px;
+  background-color: #f7f4f4;
+}
+.comment-body{
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.comment-body h3 {
+  position: absolute;
+  margin-top: 0px;
+  margin-left: 1px;
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 5px;
+}
+.comment-body p{
+  padding-top: 10px;
+  position: absolute;
+}
+.comment-buttons{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-top: -10px;
+  margin-left: 850px;
+  margin-right: 4px;
+  font-size: 14px;
+}
+.comment-buttons button{
+  color: rgb(149, 195, 240);
+  justify-content: flex-end;
+  align-items: flex-start;
+  border: none;
+  background-color: #f7f4f4;
+}
+.edit-form{
+  padding-top: 10px;
+  padding-left: 75px;
+  height: 17px;
+  width: 200px;
+}
